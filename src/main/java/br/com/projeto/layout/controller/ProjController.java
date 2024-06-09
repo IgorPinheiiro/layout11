@@ -21,10 +21,17 @@ public class ProjController {
         return "home";
     }
 
+    @GetMapping("/cadastrar")
+    public String cadastrar(Model model){
+        model.addAttribute("aluno", new Aluno());
+        return "cadastro";
+    }
+
     @PostMapping("/cadastrar")
     public String cadastrar(Model model, @ModelAttribute Aluno cli){
         AlunoService cs = context.getBean(AlunoService.class);
 		cs.inserirAluno(cli);
         return "registrado";
     }
+
 }
