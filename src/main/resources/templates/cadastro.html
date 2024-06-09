@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Cadastro ONG AFAPM</title>
+
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Cadastral Clubinho de Férias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="bg-light p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img class="logo" src="img/afapm-2.webp" alt="Logo da ONG AFAPM" style="max-width: 100px;">
+            <div class="header-description">
+                <h1 class="h4">ONG AFAPM - APOIO A FAMÍLIA POLICIAL</h1>
+                <address class="mb-0">
+                    <p class="mb-1">Sede: Rua Cônego Teófilo Fraile n° 49, Esplanada dos Barreiros - São Vicente - SP</p>
+                    <p class="mb-1">CEP 11340-050 - Telefone: <a href="tel:+551334678997">(13) 3467-8997</a></p>
+                    <p class="mb-1">CNPJ 30.275.653/0001-44</p>
+                    <p class="mb-1">FUNDADA EM 03/01/2018</p>
+                </address>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="mb-4">Ficha Cadastral Clubinho de Férias</h2>
+            <form id="ong-form" action="/registrado" method="GET">
+                <div class="mb-3">
+                    <label for="name-input" class="form-label">Nome:</label>
+                    <input id="name-input" type="text" name="name-input" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="birth-input" class="form-label">Data de Nascimento:</label>
+                    <input id="birth-input" type="date" name="birth-input" class="form-control" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="age-input" class="form-label">Idade:</label>
+                    <input id="age-input" type="number" name="age-input" class="form-control" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="gender-input" class="form-label">Sexo:</label>
+                    <select id="gender-input" name="gender-input" class="form-select" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="tel-cel-input" class="form-label">Telefone Celular:</label>
+                    <input id="tel-cel-input" type="tel" name="tel-cel-input" class="form-control" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="blood-type-input" class="form-label">Tipo Sanguíneo:</label>
+                    <input id="blood-type-input" type="text" name="blood-type-input" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="resp-name-input" class="form-label">Nome do Responsável:</label>
+                    <input id="resp-name-input" type="text" name="resp-name-input" class="form-control" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="cpf-input" class="form-label">CPF:</label>
+                    <input id="cpf-input" type="text" name="cpf-input" class="form-control" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                    
+                </div>
+    
+                <div class="mb-3">
+                    <label for="kinship-input" class="form-label">Grau de Parentesco:</label>
+                    <input id="kinship-input" type="text" name="kinship-input" class="form-control" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="isAssoc" class="form-label">É associado AFAPM?</label>
+                    <select name="isAssoc" id="isAssoc" class="form-select" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="não">Não</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="child-plan-input" class="form-label">A criança possui plano de saúde?</label>
+                    <select name="child-plan-input" id="child-plan-input" class="form-select" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="não">Não</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="child-med-input" class="form-label">A criança faz uso de medicamentos?</label>
+                    <select name="child-med-input" id="child-med-input" class="form-select" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="não">Não</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="has-special-input" class="form-label">Possui necessidades especiais?</label>
+                    <select name="has-special-input" id="has-special-input" class="form-select" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="não">Não</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="obs-input" class="form-label">Observações:</label>
+                    <textarea name="obs-input" id="obs-input" class="form-control" rows="4" placeholder="Escreva aqui..." maxlength="1000"></textarea>
+                </div>
+                
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
+
+</body>
+</html>
