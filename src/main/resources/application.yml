@@ -3,9 +3,9 @@ server:
 
 spring:
     datasource:
-        url: jdbc:postgresql://dpg-cpii07mct0pc73frrf10-a/myspring_0pg6
+        url: jdbc:postgresql://dpg-cpivs84f7o1s73bnvjbg-a/layout
         username: admin
-        password: e0W37gpl1CbM3fmxbtXvYlCmVIugUdmy
+        password: zaunUQRirVvnHPz2LiVs3Ky4hi2b2zBK
         driver-class-name: org.postgresql.Driver
         initialize: true
 
