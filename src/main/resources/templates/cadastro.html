@@ -29,7 +29,7 @@
 	<main>
 		<div class="container">
 			<h2 class="mb-4">Ficha Cadastral Clubinho de Férias</h2>
-			<form id="ong-form" th:action="@{/registrado}" method="post" th:object="${aluno}">
+			<form id="ong-form" th:action="@{/cadastrar}" method="post" th:object="${aluno}">
 				<div class="mb-3">
 					<label for="name-input" class="form-label">Nome:</label>
 					<input id="name-input" type="text" th:field="*{nome}" class="form-control" required>

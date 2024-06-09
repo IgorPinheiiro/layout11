@@ -38,11 +38,6 @@ public class ProjController {
         return "registrado";
     }
 
-    @GetMapping("/registrado")
-    public String registrado(){
-        return "registrado";
-    }
-
     @GetMapping("/listar")
     public String listar(Model model){
         AlunoService as = context.getBean(AlunoService.class);
