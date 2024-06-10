@@ -1,15 +1,15 @@
 package br.com.projeto.layout.model;
 
 public class Aluno {
-    private int id, idade, telefone;
-    private String nome, observacao, responsavel;
+    private int id, idade;
+    private String nome, observacao, responsavel, telefone;
 
 
     public Aluno(){
 
     }
 
-    public Aluno(String nome, String observacao, String responsavel, int idade, int telefone){
+    public Aluno(String nome, String observacao, String responsavel, int idade, String telefone){
         this.nome = nome;
         this.observacao = observacao;
         this.responsavel = responsavel;
@@ -17,7 +17,7 @@ public class Aluno {
         this.telefone = telefone;
     }
 
-    public Aluno(int id,  String nome, String observacao, String responsavel, int idade, int telefone){
+    public Aluno(int id,  String nome, String observacao, String responsavel, int idade, String telefone){
         this.id = id;
         this.nome = nome;
         this.observacao = observacao;
@@ -46,7 +46,7 @@ public class Aluno {
         this.idade = idade;
     }
     
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
@@ -54,7 +54,7 @@ public class Aluno {
       return idade;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
