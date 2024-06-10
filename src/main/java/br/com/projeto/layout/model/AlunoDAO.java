@@ -6,6 +6,7 @@ import java.util.Map;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -34,6 +35,15 @@ public class AlunoDAO {
         params[4] = aluno.getTelefone();
         jdbcTemplate.update(sql, params);
     }
+
+    // public void inserirAluno(Aluno aluno) {
+    //     String sql = "INSERT INTO aluno(nome, observacao, responsavel, idade, telefone) VALUES (?, ?, ?, ?, ?)";
+    //     try {
+    //         jdbcTemplate.update(sql, aluno.getNome(), aluno.getObservacao(), aluno.getResponsavel(), aluno.getIdade(), aluno.getTelefone());
+    //     } catch (DataAccessException e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
     public List<Map<String, Object>> listarAlunos() {
         String sql = "SELECT * FROM aluno";

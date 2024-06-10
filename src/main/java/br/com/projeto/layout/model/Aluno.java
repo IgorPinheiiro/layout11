@@ -14,6 +14,7 @@ public class Aluno {
         this.observacao = observacao;
         this.responsavel = responsavel;
         this.idade = idade;
+        this.telefone = telefone;
     }
 
     public Aluno(int id,  String nome, String observacao, String responsavel, int idade, int telefone){
@@ -22,6 +23,7 @@ public class Aluno {
         this.observacao = observacao;
         this.responsavel = responsavel;
         this.idade = idade;
+        this.telefone = telefone;
     }
 
     public void setId(int id){
