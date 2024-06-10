@@ -18,4 +18,7 @@ public class AlunoService {
         return cdao.listarAlunos();
     }
 
+    public void deletarAluno(int id) {
+        cdao.deletarAluno(id);
+    }
 }

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import br.com.projeto.layout.model.Aluno;
@@ -44,6 +45,12 @@ public class ProjController {
         List<Map<String,Object>> lista = as.listarAlunos();
         model.addAttribute("lista", lista);
         return "lista";
+    }
+
+    public String deletar(@PathVariable("id") int id) {
+        AlunoService as = context.getBean(AlunoService.class);
+        as.deletarAluno(id);
+        return "redirect:/listar";
     }
 
 }

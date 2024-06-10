@@ -27,6 +27,9 @@
                     <td th:text="${aluno.responsavel}"></td>
                     <td th:text="${aluno.observacao}"></td>
                 </tr>
+                <td>
+                    <a th:href="@{/deletar/{id}(id=${aluno.id})}" class="btn btn-danger btn-sm">Deletar</a>
+                </td>
             </tbody>
         </table>
         <a href="/cadastrar" class="btn btn-primary mt-3">Cadastrar Novo Aluno</a>

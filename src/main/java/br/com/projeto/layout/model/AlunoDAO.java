@@ -23,4 +23,9 @@ public class AlunoDAO {
         String sql = "SELECT * FROM aluno";
         return jdbcTemplate.queryForList(sql);
     }
+
+    public void deletarAluno(int id) {
+        String sql = "DELETE FROM aluno WHERE id = ?";
+        jdbcTemplate.update(sql, id);
+    }
 }
