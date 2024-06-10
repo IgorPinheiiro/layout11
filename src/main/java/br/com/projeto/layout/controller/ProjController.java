@@ -46,7 +46,8 @@ public class ProjController {
         model.addAttribute("lista", lista);
         return "lista";
     }
-
+    
+    @GetMapping("/deletar/{id}")
     public String deletar(@PathVariable("id") int id) {
         AlunoService as = context.getBean(AlunoService.class);
         as.deletarAluno(id);
