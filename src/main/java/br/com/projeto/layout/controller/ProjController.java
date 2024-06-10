@@ -35,7 +35,7 @@ public class ProjController {
     public String cadastrar(Model model, @ModelAttribute Aluno aluno){
         AlunoService as = context.getBean(AlunoService.class);
 		as.inserirAluno(aluno);
-        return "redirect:registrado";
+        return "registrado";
     }
 
     @GetMapping("/listar")
